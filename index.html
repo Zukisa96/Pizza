@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #38A3A5;
+        }
+        .pizzas{
+            background-color: pink;
+            border-radius: 1em;
+        }
+        
+
+        .pizza {
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 1em;
+            margin: 5px;
+        }
+
+        .large {
+            background-color: #57CC99;
+            
+        }
+
+        .medium {
+            background-color: #80ED99;
+        }
+
+        .small {
+            background-color: #22577A;
+        }
+
+        .header {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #C7F9CC;
+        }
+        .align{
+            text-align: center;
+        }
+        @media(min-width: 960px){
+            .pizzas {
+            display: flex;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="align header">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADHCAMAAAAOPR4GAAABNVBMVEUAG2b/////MzbT4R4AGmf/NDIjHGRwI1z/NDQAAGnW5BwAFGcAGmjZ5xoACGjb6RgADGcAAF4AEGcAAFsAE2c9UlQAAGAAAFdtgEe8vsy1Kk8zHmfxMj+pKVFNH2A6Rl+uvjW1xSv19vrK2CUAIGOktTG+w9aKjqlIVIj7Mzm6KkvfL0GYoL7M2x87TFrd4u8bK2RNXlRSZk8fN1u7zCR5HVgtRFhkG1vLLUmdKVuQJlU/HmJecUx0h01wdpuKlkgRMWM/T1lPW1plcqCnrsfn6vNVY5LP0+AXLHBSZ1ebqEBpek5mclRYIV8AEXCsssckPIMvRIgSJ3Q2QXlGU4Voc6J+ia+Bj7gsO3iOnEGUpDucrTcJKWN+jkQcN2IsP2AIKV7KMEzUKEMxIWaCIlktE2SQIFM07JcrAAAVpElEQVR4nO2d+UPbttvAHaLQOFIcX7gXbUmAEMq1QHpQKIMNSFpgdNAxjha6ju3//xNe+UiwpMfOYTlk37fPDz0S6bE+sqTnkBwrmfuQvWb1ePFsv/appXTk06fa/uLj6spQG6IM9WqZzEp199ffT4juGI5uY6SEBGGbfopnWrXFx80hNWeI+JWV3V9PT1THJIjBZgUhYhuGffr5z+YQBsKQ8Ct7u3+ca46JY8CZTiDYsE72z1Yq6bZrKPgrizUXvTfyUB/YjtU6q6bZA+njryz+rhq93nVBiG7pW9XUGpcyfuX4VHX6vu3cIDAtZy6ltTBV/OaWbiRkD3rAMc6P91JoYYr41c+2MeiYFwU7rTP5piAtfDrqHVsevCvEUKR3QDr4leOaNfBqFy3IMX+Vuwikgl89taRMeaADdP1M5hqQAn6zlha81wGOtSjPE5COv7f1MEV4TwyyK6u1svEXkZUyPBXinEpaAuTiN2uO/AUPEITNOSkzQCr+nGkOhd7tAF3KAJCIv1KzhgXv8tsyBoA8/F3HHB681wHG74m9IFn4lf1h3vpAbH0xYbMl4Tdb+tDhqSBrK9kEkIO/q6dt66P4nf1EE0AK/pzEyK5f0VtJLIAE/MrWEDydaMFKAh+Qw69ESIyGvZpxn/TUByR/SsFf2bIfxomFT2pCuLF3P4teWNDDXyXgHzt6/BRGCGHHmmMSjyvaPS16jFj7ifGrmPR0KccJeVtNvbdKaYvxKzQ/m9XaT63zuAxJB79y3vNtdE7bxqapJL73dEhJMBvUAHL8e82zz8SxCSGmFu0cdfCbTqc1oIQvZrb8CdA8SUSPsK5qrqiqnjQ1RvnvoCp7i1stw2nrRFakbejgL3rrNw0kYKFt1O5Sl/jEvf8ryeht/Xrz49UslauLzbWZpLOow1+dq5kWE3oiMypBxuGrl7OwXF1evN+hdynQap/T4ZWMXn09WyoVfCmWSo2bpPPIcPmbW6blCEPJihr+PH6jWIgS2sbZTTUwc8ZcJSH9o1IhG5Kl5cTLiPVHZtFirRfRvfbqW73iM23ipVBs1FVPLzL3E8W3er3EqpaAr5gn4a0FZGvq9uYjV60pB592QPYg4E+26pnT3IVk4CudFRphU1UmHpWni1PucJCGTztgVUveTn2Tu/ly8H0hWNXWPnxsZOn0KkjHz35Jbuz1Wf468vDJzIuvU9N0VfVaKxs/W7zUkjoq5CfhOvLw1XKp2NEuHz9bWkvaUnzDjf1iqbAjDX86PFY9fHQSsTM0CH7xZzVhC80JBr+wdFHfVmSlTAB8BRnnYFaIwzfrSxxroVjge6QwldRNN1fD+IXpbdUk0hJGED695Dl0/zv4x37SQv25yKJeXVyWl3gjlXT0swt/8X3S0cQIjE+Dwjj8lROvGDcss6UbVVV/4W5/acfuXAwRbOte4KLpNmbuoRA0IZsqc3179SvTyXWTGU4xKsNlzIgiHL4WxGvIjMPPnHm3H7/g8F9jBXGtzZbqgceHTNWeWZvYfOTJ5sT1jK12egaZelhMZNsTX69+XiNU4fuwwqVrVb/LG2DVVK4nVn2VBxM3LawK+SR6ldZNvX3VtRlaJFSfxae6/S8fArP/Dr9yTiLwFbzGfbjpNQhp6sTHcolK0RP3H+WLiXZcxIVPl+pNg1qkYt3EN1dlZjpNzc5OBQPKVG8upgphlaXG5arKmFpdnbgoM0XKlwckuKx+MMssX9P00lNeONUFv4aj8JEC4WN1s+1chHq7WJo+9AY4Fz4VG9/8shR/OcvWol+XPrgDCqn1Rshot78tZd+rndUGqasN/rJuPDa16XWS+nOJr14oLSfDVwF8/NMs39B2D1zNYEUwotNT/n9dfN68UJUuPjIvYJXZYvm6Pd/UC8EUBZdtHNJO4tduT3kyfAXAR+qseJ12Y2fd1SbCh4jBVy+iVTa2cUDPRwsdKRRm1/CQ8LWDyKbSxn5VB8A36zE+V/FKdee2ORFz2WzpkTYcfKTGtIIu5tukf3y1HOdyFlxzg7AQK4WlOCx81m+D2tE3Pt6OV3mhusFC3M1PCR9hAV/9yLC55if8/8KsGocPrvwa4wxkC5zKbFYV8gR8GQ9f+spPZrgPV3U8FSYoXtCG8W1VryLwyc0FO4RnP368WsbqZfjDwuy2tjPNsM0QTmdhakY95PD1w4+s3f9Ila+RJPgaN9JLE/pMuGWFhooJNx4wIsoUxE+nMFHZTN8E9YUx0pg+Kc6YSN0Mj4cCbYrKqFx6QcuEO82dczrv9QWO9oD4OtZNjqO0o//EhGzutDRZpGsi9JpX1FvBuJXD86GRGZ4stNlIYVeD4qqJdKYl07SMHlbl4keFPEgT6bvj19duPkxxq0nhhcngewkA/JqpSYNC+wU/DYtL09N1uyf8K82Na1h8XcDnej0O3zobAD/rutS8F1r+ggH8GwF/mdVVmH60/M3bSO0VH/WA/0vpzrMuRePbrdh4PwofELqsEx4fY7MbfqHhqLYfm/aCT1Vi3B3f3mmExPXGwWyP1QL3uQbBLx1oLH7h8tva2vVEN/yJTuDay9zfpirXuuPTyCskriIo13cesck5CP7SDGHx6UdCIQG/MH2X0+mO76tk1EbgCwLgd8/09o5f+qopPL4oAr7ntfWBL8ho4BcaVOEg+O//F/ALSze2Mhi+9p/HL5TK1+4CNkr4/CGUtPCpXW0c+FknDt8NPThJig+oPATxEQ6Ja1el4hc7V5+euly2g5wjZ/iulid4mUGJ8AvlHUHlNoHs/i89eH0D4xffr3qys3yzjdXO6QHB7bFt7lQQLZkI/8pVyeokCuz13X0Q5fWhVsTjb3f4Ky0E4JduVC9Lb7ObCQI+vcQMI0pSfNfpVVidqBt+pM+PrE/g6b47/C0M4r8G97MAfP2gUQ4Jjfii8fXe8PFyWGWjLkZ8veLTe0Gg+3+3yeUfBePP3BQPwLMcAL72vhQ+CBXr9gibXDC+PRFWWRoo4iu3T8zpf8Th73qn0hGfovHibgifWaVdMi7dQfHVR0y2ohzCZzMbnkOE9DKz9NHrstlk1/CpQrzPlBHxs4VV1T/nhow4/GB/X8iily6gA5dIYa2UqqnsJxTffs20w21IUFurs9dYmnF3uDSm5+mio3G9tKrzCbQPtEy40wD8bPbrmm+sY7M9Uccb6OiB8NnDOYXy4SGXEVrDgq7iB3+nBr/gjnUVsl8Iv8lRaBwcsqwuvsYOqKWDQyZBCOIXl7Kvu6Y6o/HBYxdcPrlQ5HenAPxgZ1QRE92lbeKuh5xKLs3i4nMppSxXxscXUow9ZHr7xOc3fQXpHx+pXZ1e2pTYrRAfX9gqk48P9DEr/eODu5NhNorPm0xej4uvHw4BH9/AG61BrcIM6RufEP6oJ6PSg4jbWaVryIQbjc7walLAV9R6NqqxhdLsN1vU1Q1fMW+mo9hoqLnseSDU9kXcfxqQ3XhFtFVOSxr4irZc5nPAXoVicbbuPuHTP75iXs+CKin8ph5s8BP9Aup3Cv/I9k+IIO0ruxD3gR8cGelICTR8fmNnDsrF8Lk31zXLli9e26Yfd3O6Ovg7Wf6bAF/BuD5VcF29sMpC4+OEcne8BWnLV9OhMt5Z++mpzS8dBw1p9UYxdLSkZ3w9OKUUks3o84ZEw7+8n2pML7nBeWFpulG+PFxW2nGhfsBpeh/ED2Sbv8b7VqflurZzMEtVZgOVjcuDnS8q+3CGrd6sXjZoIVdokfLXD9RJCj0OgnSlflFuTLvfla8uH1133ePz8ZXgQFlIYp9uQ6am4uudD4eHh/WdNUVV9dCJekFXO3oiwkW4Y/j6t+U6Vbm6czOjqpotPueCdVWdud5x5eaLDjwLhExVVba/fTHd9LfWfY+vNvBJRURs9wibacv7pR731J4XZuOY86P0uq5EHPzzCpDQd8gR6Tv41eBJ1MgnuaIeOIsrGasM1j1AlS5NaRd0oOd52viP/ceQnz+Ik6dPMeH6mkSUdL8bj1XGybjSd5WnLP1RZMEN92s9bovTx0fPcmMxMk9lYf3V36G5iPNQwdwrry/n45RxNd4oA1Zpy/g82BQq+Zdug9FJUnz/qrnJt0do9PD/iWm6h28BW7z941PJj71sz4GRwUevopue82aWdSwJnypc2ECjhU/+ihr7tOSt21ho7RsQfyw/T0YM/3s0vj/5cU0e/lh+AY8U/kZczQUPzhEn/8D4Y7l3ZJTwn8e1POfZSEtM9Q+OPzaJRggfvYvF94oa4uRPgJ+7pTVs+Kuh48dN/fbkBx5k5ry+f6D1M08F0vndPfB5CzQ4/3K8T5b8AuoXP1h82vgLsWW/e5ZfPNzV8fn9H29QxieFuvPP1tdfQh0w6c4osi4OmAiWHPWYqEDtm99QwCr56Cpjz5mpH99vnn7kCPtcnYjv1M+UAOZzUqGRE34i8ueOXJ1Hwuf+UOOblJ+8NSMU0clCQIq4KrdMGPwgftZ6TQUmfwe/6mcUiHipSW8k47fCF/7keyrcm/wz6O5Peo4iuQXamXvZRmGrzHvRBYH8udxfDD3ixiA/FnLrCJz8dzu8fr4jEh/o377wc/96Hz4XSei46Dz8xlZ55iGCFn3eDtPTqc80e/IlR5Ff8B0ffvKHfrfHisc/Soj/wFMPLtBH8BTOPfBMK1Ql/4aLu5lG5P96xtdZcCGQsMk9NHyPkTwBxnH+GYnBB21xuIrfOOZSuds3QiWvix3+p+6Hhj9Pr4/eiCTUKIVuJNtj7i1+A937BYUTdkXJvcF8Yz0nRbH4yT9cfHAW/xPCEKooXau4wg0Raub4anlvqbT53/YaJr65ABkw1nPnqoAT349fw8JO/bEFLNpvb3klrZXh4R9Rp6Uj+SPIQWqv7h38MbYKaCafCIlvzN7s74QIa1/g+DSHhz/+PCygzaM+FSNclQ2gRj5oT3jsP2DbtY7E3I8/ZHjHp3d8MaLshs82EXCnqWyIJUMCzZb8czHDvc6tfHQ8CPheo/iUR+/4ou/VFz5+CY3j9bgfKgPNZI63eW5Bzst5DuBTr9MteT4gPv4utuSod3wEzWIvZowUBPnx+e+2WJKwZVwXh4g+ulfRbPaP774oCrgT+T7woVk8Ni/M4rD8AwZxT4GSJtO2/FssBgH0Y8+HdI77xZ9f//fZX2PALPQcyd7wETSLx94Ak+TuloL+8QNoWWGHiRdwolu+tt8qc79ffDfojkx39IYPaaUGLJZeMF1joM0Ti+beEITQuOD4vPVSHqhv/AgJYrge8CNmceye8hHo7IIdxvk4+We37969E7NQOfd6yNqThJ/3p2EP+Bjafss/J2HhqthQldwRWAXxmj2nSazttdc4loPfzlF0x0fiKuwmePCzlyFh6yDQTL4jYJW43b1wda+8MycHP9jm6Y5P/oVQ3hI8mct3JLdAulXJU192IVxl0q8C2lRA8t7CQT5Jwc+3Q5Wu+FCU6zohmKnI4IP+Me1vNp8bVInb3WOv6XWWIwE/P/mA9IiPJ8FsjRKDT0Bn9wGfzg6qgHMLkmCjt5oUPz/2faPT2i744L3xsjWR+NHOLoj/tNe9gdwrIerpHz+Xm//+JnSr4vFF92Osk3iMwEevIquA+LG7e4wOb7FmHJ+e8PPBH+7fk09u/2Z8j3j8v6F2+JsaUfiCw+JV8TY1MIAvureR8t0rTyp94U/evmrLxrj4s4Kx+DY08YNNjb9hfBvMCf3rfT0OVBESQh3TIKrZ4Cc//4N1ESFPxFGybvgEStO2PVfWXrXx4ZxQsKnxCqgyzu/uPfG9gifAvow3hJCxK+IHm3wQPhRk9YSPxHyzazT8x2C5gK6ND1UJNjXIP5NAFS4LRV37QICG+R2P7vLdd3t8wXlbMc6af67ECLTH196AEhvgfns0Pv706M06N8MDfDAnlHsQVMmLVfgB1rk4pCrI3Ng1Hr/qv0oNbYh1uqRkgPEdjBcg5eC12t2yFXxyH5+8Bdcxt8o8XEXs4iCSIoABCVDubj+3v/8U3FF6F3Owdh1aqN66/PEHLgRCLxyFbF58FaHB+UnfLL8C3QF/CbUeg/gIcjjGOh0KiJhTc8XbU4m4+XEsfRgxvwpUIe8t8BvwxX3XJwofPtwyH4MffbZnKPjQCPPcCjC7Nhaki37g/8D/gf8D/wf+D/y23YckH2f3QfHs/nf4O1gmA/z+qoAVArsPV4qz+8o4LJH0UTXilMVeo+8q/V7d+07Arw7n9cmjIcjgff5KDdg5ZeuQ0Xj3nATRO69vu4v3u7yLENfOJLyPZySEkM4u9122Z9eIu7s2jRGTvYRrZMTW77JdoZdRVk8eGg4shlNboR0k9RUaaYsT9UrRWuiEA/Mm1uriHCyL/nkw8h+6/Qazlxclfb2Hdxf8CaORFCadLQk/0/v7Ou9bIl9AmAS/mvhtXEMS0iNXny+h/pzoHYRDE2QAD6xKwG+a/wnfxwQe2JSBn5n7Lxg/hHt9K32/+JXzbs7xCEhvRm8Q/P9CbGQLj+zIw89sjbrrj4yYl24nxq+cjPjqZ0A/0iENP9M07hswVvBpHywD4GdGOvLljm2mgJ/5LLwgb2Qk5m3r0vBXRnf6g6+clIyfeayPKL952rPNS4CfmXPuGxQUctK7zUuCn9n/7b5RIek10kmMnzkdQf6HvQX5MvAro5f4BN+7lBJ+pgn8iuC9isE/oJsqfqaKR4pf78fbk4CfOR6l3Ee/Ji85fuZYHRl+87wfX1cOfubYGRH+AekT4meqo8GvD0ifFD9THYXx7ww072XgZ6r3vvOFnN6TW9LxM81P9xz+OvsD00vAz6yc3mf6Azn9+3pS8TOVz/fHT4y+0htp4GcyZ/e19WvafUa4qeBnjrX7WACRcTqgwZOMn2meGkMfAMSIetFazyILP1PZGrYHpLf6TW6IIg2fToCTYVpAZOz3uo8ZIxLxM3u14U0AG/y9+b5FJn4ms6sNpwOQlXTNC0QuPl0BrPRNADJIImMfEsn41ATUrJSXQNOJeLPkACIdP1PZbaU4AxC29pN5OozIx6dL4FwrpTMQCDun/O9NJpI08GkHnOE0OoA458lNPSPp4LsdYMl2g7Alwc/hJC18ugbMEYlWAOmW3GHvS3r4tAOOP1tdnhLokR0b5pbEBe9O0sSn0txqWWayHkDEMD4vSjN1rKSMTxeB4/0Twx64B6ihOz1rDp7N6iKp41NZOf584uiRr86KRkem0TrdTY09Mxx8KnvVs5PfjH42xZBlOOSPxykN+rYMCd+VleM/TlTH0LuaA2wZ1kP1bFdCQNtNhojvSqW6eHb6m2oYhm5iEvopHERnOTZ1xwX/fW4xBRsHypDxPansVRf/PNv/fN7Cmqo6Dy3LUjV8cl7bOjtbbFYqaU52Tu4DP5BKZY+RYWK35R7xR0F+4P9/lv8DA+qRpOh2D1cAAAAASUVORK5CYII="
+            width="75">
+            <h1>Perfect Pizza</h1>
+    </div>
+    <div class="pizzas" >
+        <div class="pizza large">
+            <h2>Large Pizza</h2>
+            <img src="https://user-images.githubusercontent.com/34037/167314003-8ded573d-4bb2-447f-b27c-5545631b1904.png"
+                width="200">
+            <h3>R129.00</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat</div>
+        </div>
+        <div class="pizza medium">
+            <h2>Medium Pizza</h2>
+            <img src="https://user-images.githubusercontent.com/34037/167314003-8ded573d-4bb2-447f-b27c-5545631b1904.png"
+                width="150">
+            <h3>R89.00</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat</div>
+        </div>
+        <div class="pizza small">
+            <h2>Small Pizza</h2>
+            <img src="https://user-images.githubusercontent.com/34037/167314003-8ded573d-4bb2-447f-b27c-5545631b1904.png"
+                width="100">
+            <h3>R49.00</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat</div>
+        </div>
+    </div>
+    <div class="pizza footer">
+        <h2>Contact Details</h2>
+        073 500 3157 info@pizzaperfect.com
+    </div>
+
+</body>
+
+</html>
